@@ -45,6 +45,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.img {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -268,8 +272,42 @@ p {
 }
 
 /* Секция наша Команда */
-/* Заголовок */
+
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--secondary-white-color);
+}
+
+.container .team {
+  display: flex;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list-item {
+  padding-bottom: 24px;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--primary-white-color);
+}
+
+.team-list-item > img {
+  margin-bottom: 30px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* Заголовок */
+.team-main-title {
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -279,6 +317,8 @@ p {
 
 /* Имена команды */
 .team-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -287,12 +327,24 @@ p {
 }
 /* Должности */
 .team-text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--primary-text-color);
 }
 /* Соц сети */
+
+.team-socials:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-socials {
+  display: flex;
+  justify-content: center;
+}
+
 .team-socials a {
   color: var(--socials-main-color);
 }
