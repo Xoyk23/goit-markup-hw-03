@@ -199,6 +199,10 @@ p {
   outline: 2px solid salmon;
 }
 
+.advantages-item {
+  width: 270px;
+}
+
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -221,7 +225,31 @@ p {
   outline: 2px solid salmon;
 }
 /* Секция "Чем мы занимаемся */
+
+.job {
+  padding-bottom: 94px;
+}
+
+.container .job {
+  display: flex;
+}
+
+.job-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.job-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.job-list-item {
+  width: 370px;
+}
+
 .job-title {
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
