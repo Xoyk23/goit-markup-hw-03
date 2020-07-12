@@ -186,18 +186,39 @@ p {
   color: #ffffff;
 }
 /* Секция преимуществ */
+
+.advantages-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px solid salmon;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  outline: 2px solid salmon;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-title {
+  margin-bottom: 10px;
+
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-title-color);
+  outline: 2px solid salmon;
 }
 
 .advantages-text {
   font-size: 14px;
   line-height: 1.7;
   color: var(--primary-text-color);
+  outline: 2px solid salmon;
 }
 /* Секция "Чем мы занимаемся */
 .job-title {
