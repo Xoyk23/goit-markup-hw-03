@@ -364,11 +364,32 @@ p {
 }
 
 .clients-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 170px;
+  height: 90px;
+  box-sizing: border-box;
+  border: 1px solid var(--socials-main-color);
+  border-radius: 4px;
+}
+
+.clietns-list-item:hover {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
 }
 
 .clients-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.clietns-list-item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
 }
 
 .clients-title {
