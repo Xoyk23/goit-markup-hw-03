@@ -375,7 +375,7 @@ p {
   border-radius: 4px;
 }
 
-.clietns-list-item:hover {
+.clients-list-item:hover {
   border: 1px solid #2196f3;
   border-radius: 4px;
 }
@@ -384,7 +384,7 @@ p {
   margin-right: 30px;
 }
 
-.clietns-list-item-link {
+.clients-list-item-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,7 +405,14 @@ p {
 /* Подвал */
 footer {
   background: var(--footer-background-color);
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
+
+.container footer {
+  display: flex;
+}
+
 .mail-footer,
 .phone-footer,
 .map-link {
@@ -419,12 +426,15 @@ footer {
 }
 
 .logo-footer {
+  margin-bottom: 20px;
+
   font-family: var(--second-font);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   color: #ffffff;
   text-decoration: none;
+  display: block;
 }
 .map-link {
   color: #ffffff;
