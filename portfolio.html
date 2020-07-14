@@ -63,35 +63,35 @@
     <main>
       <!--Портфолио-->
       <!-- Набор кнопок фильтра -->
-      <section>
+      <section class="portfolio-section">
         <h1 hidden>Портфолио</h1>
-        <ul class="filter list">
-          <li>
+        <ul class="filter-list container list">
+          <li class="filter-list-item">
             <button type="button" class="button-filter-secondary">Все</button>
           </li>
-          <li>
+          <li class="filter-list-item">
             <button type="button" class="button-filter-secondary">
               Веб-сайты
             </button>
           </li>
-          <li>
+          <li class="filter-list-item">
             <button type="button" class="button-filter-secondary">
               Приложения
             </button>
           </li>
-          <li>
+          <li class="filter-list-item">
             <button type="button" class="button-filter-secondary">
               Дизайн
             </button>
           </li>
-          <li>
+          <li class="filter-list-item">
             <button type="button" class="button-filter-secondary">
               Маркетинг
             </button>
           </li>
         </ul>
-        <ul class="portfolio list">
-          <li>
+        <ul class="portfolio container list">
+          <li class="portfolio-item">
             <a href=""
               ><img
                 src="./images/portfolio/project1.jpg"
@@ -108,7 +108,7 @@
               </p></a
             >
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="">
               <img
                 src="./images/portfolio/project2.jpg"
@@ -127,7 +127,7 @@
               </p></a
             >
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="">
               <img
                 src="./images/portfolio/project3.jpg"
@@ -146,7 +146,7 @@
               </p>
             </a>
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href=""
               ><img
                 src="./images/portfolio/project4.jpg"
@@ -165,7 +165,7 @@
               </p></a
             >
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="">
               <img
                 src="./images/portfolio/project5.jpg"
@@ -184,7 +184,7 @@
               </p></a
             >
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href=""
               ><img
                 src="./images/portfolio/project6.jpg"
@@ -203,7 +203,7 @@
               </p></a
             >
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="">
               <img
                 src="./images/portfolio/project7.jpg"
@@ -222,7 +222,7 @@
               </p></a
             >
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="">
               <img
                 src="./images/portfolio/project8.jpg"
@@ -239,7 +239,7 @@
               </p></a
             >
           </li>
-          <li>
+          <li class="portfolio-item">
             <a href="">
               <img
                 src="./images/portfolio/project9.jpg"
@@ -262,39 +262,63 @@
       </section>
     </main>
     <!--Футтер-->
-    <footer>
-      <div>
-        <a href="./index.html" class="logo-footer"
-          ><span class="logo-decoration">Web</span> Studio</a
-        >
-        <address class="contacts-footer">
-          <a href="https://goo.gl/maps/6xq8Gzf84UrhbULt7" class="map-link"
-            >г. Киев, пр-т Леси Украинки, 26</a
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-contacts-block">
+          <a href="./index.html" class="logo-footer"
+            ><span class="logo-decoration">Web</span> Studio</a
           >
-          <div>
-            <a href="mailto:info@example.com" class="mail-footer"
-              >info@example.com</a
-            >
-          </div>
-          <div>
-            <a href="tel:+380991111111" class="phone-footer"
-              >+38 099 111 11 11</a
-            >
-          </div>
-        </address>
-      </div>
-      <div>
-        <b>присоединяйтесь</b>
-        <ul class="list">
-          <li><a href="" aria-label="иконка инстаграма"></a></li>
-          <li><a href="" aria-label="иконка твиттера"></a></li>
-          <li><a href="" aria-label="иконка фейсбука"></a></li>
-          <li><a href="" aria-label="иконка линкедина"></a></li>
-        </ul>
-      </div>
-      <div>
-        <b>Подпишитесь на рассылку</b>
-        <a href="" class="button-footer">Подписаться</a>
+          <address class="contacts-footer">
+            <ul class="contacts-footer-list list">
+              <li class="contacts-footer-list-item">
+                <a href="https://goo.gl/maps/6xq8Gzf84UrhbULt7" class="map-link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="contacts-footer-list-item">
+                <a href="mailto:info@example.com" class="mail-footer"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="contacts-footer-list-item">
+                <a href="tel:+380991111111" class="phone-footer"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join_us">
+          <b class="join_us-title">ПРИСОЕДИНЯЙТЕСЬ</b>
+          <ul class="footer-socials list">
+            <li class="footer-socials-item">
+              <a href="" aria-label="Иконка инстаграма"
+                ><img
+                  src="./images/socials/insta_footer.svg"
+                  alt="Иконка инстаграма"
+              /></a>
+            </li>
+            <li class="footer-socials-item">
+              <a href="" aria-label="Иконка твиттера"
+                ><img src="./images/socials/twitter.svg" alt="Иконка твиттера"
+              /></a>
+            </li>
+            <li class="footer-socials-item">
+              <a href="" aria-label="Иконка фейсбука"
+                ><img src="./images/socials/facebook.svg" alt="Иконка фейсбука"
+              /></a>
+            </li>
+            <li class="footer-socials-item">
+              <a href="" aria-label="Иконка линкедина"
+                ><img src="./images/socials/in.svg" alt="Иконка линкедина"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <b class="subscribe-title">Подпишитесь на рассылку</b>
+          <a href="" class="button-footer">Подписаться</a>
+        </div>
       </div>
     </footer>
   </body>

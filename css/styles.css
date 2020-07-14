@@ -1,17 +1,4 @@
-/* an+b
-a=задаём мы (3)
-b=смещение  (2)
-n=всегда 0 и увеличивается на 1
-3n+2
-3*0+2=2
-3*1+2=5
-и.т.п
-
-
-
-*/
-
-html {
+*/ html {
   box-sizing: border-box;
 }
 
@@ -45,10 +32,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.img {
-  display: block;
-}
-
 h1,
 h2,
 h3,
@@ -60,6 +43,13 @@ p {
   margin: 0;
 }
 /* обнуление стилей */
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
   margin: 0px;
@@ -78,6 +68,12 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+/* cекция */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* оформление шапки */
 .logo-head,
 .logo-decoration {
@@ -403,19 +399,31 @@ p {
 }
 
 /* Подвал */
-footer {
+
+.footer {
   background: var(--footer-background-color);
   padding-bottom: 60px;
   padding-top: 60px;
 }
 
-.container footer {
+.footer .container {
   display: flex;
+}
+
+.footer-contacts-block {
+  width: 231px;
+  margin-right: 69px;
+}
+
+.contacts-footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .mail-footer,
 .phone-footer,
 .map-link {
+  display: block;
+
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
@@ -440,7 +448,51 @@ footer {
   color: #ffffff;
 }
 
+.join_us {
+  width: 206px;
+  margin-right: 94px;
+}
+
+.join_us-title,
+.subscribe-title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-socials-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 /* Оформление портфолио */
+
+.portfolio-section {
+  padding-top: 93px;
+  padding-bottom: 94px;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  width: 370px;
+
+  border: 1px solid #eeeeee;
+}
+
 .portfolio-title {
   font-weight: bold;
   font-size: 18px;
@@ -455,12 +507,14 @@ footer {
   color: var(--primary-text-color);
 }
 
-.filters button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  color: var(--primary-title-color);
+.filter-list {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .portfolio-description {
@@ -505,6 +559,12 @@ b {
 /* Кнопки фильтров */
 .button-filter,
 .button-filter-secondary {
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
