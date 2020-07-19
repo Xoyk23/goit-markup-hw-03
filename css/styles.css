@@ -420,6 +420,7 @@ p {
 .map-link {
   display: block;
 
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.6);
