@@ -127,6 +127,8 @@ p {
 .contacts-links {
   padding-top: 32px;
   padding-bottom: 32px;
+
+  font-style: normal;
   color: var(--primary-title-color);
   font-weight: 500;
   font-size: 14px;
